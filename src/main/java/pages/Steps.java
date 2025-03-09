@@ -22,7 +22,7 @@ public class Steps {
 
 
     @FindBy(css = "#drink3")
-    public WebElement searchСHeckboxCoffee;
+    public WebElement searchСheckboxCoffee;
 
 
     @FindBy(css = "input#color3")

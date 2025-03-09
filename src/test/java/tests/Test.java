@@ -57,7 +57,7 @@ public class Test {
     public void test3 () {
         steps.searchСheckboxMilk.click();
         System.out.println("ввод в чекбокс Милк прошел успешно");
-        steps.searchСHeckboxCoffee.click();
+        steps.searchСheckboxCoffee.click();
         System.out.println("ввод в чекбокс Кофе прошел успешно");
     }
 
@@ -66,7 +66,7 @@ public class Test {
     public void test4 () {
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
+       // actions.sendKeys(Keys.PAGE_DOWN).perform();
         WebElement radioButton = steps.searchRadioYellow;
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", radioButton);
         radioButton.click();
