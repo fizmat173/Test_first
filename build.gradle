@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'idea' // optional (to generate IntelliJ IDEA project files)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform('org.junit:junit-bom:5.12.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testRuntimeOnly('org.junit.platform:junit-platform-launcher')
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.21.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
